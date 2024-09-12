@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 100%;
       }
     </style>
   </head>
@@ -17,21 +17,21 @@
     <div class="container">
       <div
         style="
-          width: 30%;
+          width: 50%;
           align-items: center;
           justify-content: center;
           box-shadow: 10px 5px 5px grey;
-          border-radius: 5px grey;
+          border: 1px solid rgb(228, 222, 222); border-radius: 15px;
         "
       >
-        <h1 style="text-align: center">Crear cuenta de contacto</h1>
-        <form style="margin-right: 10px" action="pagina.html" method="get">
+        <h1 style="text-align: center; font-size: 45px;"><strong> Crear cuenta de contacto </strong></h1>
+        <form style="padding: 25px; font-size: 30px; margin-right: 15px;" action="pagina.html" method="get">
           <div style="margin-bottom: 10px">
             <label style="display: block" for="nombre1">Primer nombre:</label>
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
-              id="nombre1"
+              id="nombre1"  
               name="nombre1"
               required
             />
@@ -39,7 +39,7 @@
           <div style="margin-bottom: 10px">
             <label style="display: block" for="nombre2">Segundo nombre:</label>
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
               id="nombre2"
               name="nombre2"
@@ -47,9 +47,9 @@
             />
           </div>
           <div style="margin-bottom: 10px">
-            <label style="display: block" for="apellido1">Apellido:</label>
+            <label style="display: block" for="apellido1">Primer apellido:</label>
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
               id="apellido1"
               name="apellido1"
@@ -57,9 +57,19 @@
             />
           </div>
           <div style="margin-bottom: 10px">
+            <label style="display: block" for="apellido2">Segundo apellido:</label>
+            <input
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
+              type="text"
+              id="apellido2"
+              name="apellido2"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
             <label style="display: block" for="whatsapp">WhatsApp:</label>
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="tel"
               id="whatsapp"
               name="whatsapp"
@@ -72,7 +82,7 @@
               >Nombre de usuario de Facebook:</label
             >
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
               id="username"
               name="username"
@@ -84,7 +94,7 @@
               >Correo electrónico:</label
             >
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="email"
               id="email"
               name="email"
@@ -94,7 +104,7 @@
           <div style="margin-bottom: 10px">
             <label style="display: block" for="direccion">Dirección:</label>
             <textarea
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               id="direccion"
               name="direccion"
               required
@@ -103,7 +113,7 @@
           <div style="margin-bottom: 10px">
             <label style="display: block" for="telefono">Teléfono:</label>
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="tel"
               id="telefono"
               name="telefono"
@@ -116,7 +126,7 @@
               >Fecha de nacimiento:</label
             >
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="date"
               id="fecha"
               name="fecha"
@@ -127,7 +137,7 @@
           <div style="margin-bottom: 10px">
             <label style="display: block" for="comida">Comida favorita:</label>
             <input
-              style="width: 100%"
+             style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
               id="comida"
               name="comida"
@@ -140,7 +150,7 @@
               >Película favorita:</label
             >
             <input
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px"
               type="text"
               id="pelicula"
               name="pelicula"
@@ -153,7 +163,7 @@
               >Describase usted mismo:</label
             >
             <textarea
-              style="width: 100%"
+              style="width: 100%; height:30px; font-size:30px; padding: 10px; height:70px"
               name="descripcion"
               id="descripcion"
             ></textarea>
@@ -163,34 +173,32 @@
             <label style="display: block" for="temas"
               >Genero:</label
             >
-            <select style="width: 100%;" name="" id="">
+            <select style="width: 100%; height:50px; font-size:30px; padding: 10px" name="" id="">
                 <option value="" selected>Seleccione su sexo</option>
                 <option value="Programación">Masculino</option>
                 <option value="Deportes">Femenino</option>
             </select>
           </div>
-
           <div style="margin-bottom: 10px">
-            <label style="display: block" for="temas"
-              >Temas de interés:</label
-            >
-            <input type="checkbox" id="vehicle1" name="depotes" value="deportes">
-            <label for="vehicle1">Deportes</label>
-            <input type="checkbox" id="vehicle2" name="Literatura" value="literatura">
-            <label for="vehicle1">Literatura</label>
-            <input type="checkbox" id="vehicle2" name="Gastronomía" value="gastronomia">
-            <label for="vehicle1">Gastronomía</label>
-            <input type="checkbox" id="vehicle2" name="Progrmación" value="programacion">
-            <label for="vehicle1">Progrmación</label>
-            <input type="checkbox" id="vehicle2" name="Ajedrez" value="ajedrez">
-            <label for="vehicle1">Ajedrez</label>
-            <input type="checkbox" id="vehicle2" name="Otros" value="otros">
-            <label for="vehicle1">Otros</label>
+            <label style="display: block; text-align: center;" for="temas">Temas de interés:</label>
+            <hr>
+            <input type="checkbox" id="1" name="depotes" value="deportes" style="width: 100%; height:30px; font-size:30px;">
+            <label for="2">Deportes</label>
+            <input type="checkbox" id="2" name="Literatura" value="literatura" style="width: 100%; height:30px; font-size:30px;">
+            <label for="3">Literatura</label>
+            <input type="checkbox" id="3" name="Gastronomía" value="gastronomia" style="width: 100%; height:30px; font-size:30px; padding: 10px">
+            <label for="4">Gastronomía</label>
+            <input type="checkbox" id="4" name="Progrmación" value="programacion" style="width: 100%; height:30px; font-size:30px; padding: 10px">
+            <label for="5">Programación</label>
+            <input type="checkbox" id="5" name="Ajedrez" value="ajedrez" style="width: 100%; height:30px; font-size:30px; padding: 10px">
+            <label for="6">Ajedrez</label>
+            <input type="checkbox" id="6" name="Otros" value="otros" style="width: 100%; height:30px; font-size:30px; padding: 10px">
+            <label for="6">Otros</label>
           </div>
 
 
-          <div style="margin-bottom: 10px; text-align: center">
-            <button type="submit">Guardar cambios</button>
+          <div style="margin-bottom: 10px; text-align: center; ">
+            <button style="height:55px; font-size:30px; padding: 10px; border-radius: 10px; background-color: #671bc7; color: white;" type="submit">Guardar cambios</button>
           </div>
         </form>
       </div>
