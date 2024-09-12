@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear cuenta de contacto</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        style="
+          width: 30%;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 10px 5px 5px grey;
+          border-radius: 5px grey;
+        "
+      >
+        <h1 style="text-align: center">Crear cuenta de contacto</h1>
+        <form style="margin-right: 10px" action="pagina.html" method="get">
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="nombre1">Primer nombre:</label>
+            <input
+              style="width: 100%"
+              type="text"
+              id="nombre1"
+              name="nombre1"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="nombre2">Segundo nombre:</label>
+            <input
+              style="width: 100%"
+              type="text"
+              id="nombre2"
+              name="nombre2"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="apellido1">Apellido:</label>
+            <input
+              style="width: 100%"
+              type="text"
+              id="apellido1"
+              name="apellido1"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="whatsapp">WhatsApp:</label>
+            <input
+              style="width: 100%"
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              maxlength="8"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="username"
+              >Nombre de usuario de Facebook:</label
+            >
+            <input
+              style="width: 100%"
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="email"
+              >Correo electrónico:</label
+            >
+            <input
+              style="width: 100%"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="direccion">Dirección:</label>
+            <textarea
+              style="width: 100%"
+              id="direccion"
+              name="direccion"
+              required
+            ></textarea>
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="telefono">Teléfono:</label>
+            <input
+              style="width: 100%"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+              maxlength="8"
+            />
+          </div>
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="fecha"
+              >Fecha de nacimiento:</label
+            >
+            <input
+              style="width: 100%"
+              type="date"
+              id="fecha"
+              name="fecha"
+              required
+            />
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="comida">Comida favorita:</label>
+            <input
+              style="width: 100%"
+              type="text"
+              id="comida"
+              name="comida"
+              required
+            />
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="pelicula"
+              >Película favorita:</label
+            >
+            <input
+              style="width: 100%"
+              type="text"
+              id="pelicula"
+              name="pelicula"
+              required
+            />
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="descripcion"
+              >Describase usted mismo:</label
+            >
+            <textarea
+              style="width: 100%"
+              name="descripcion"
+              id="descripcion"
+            ></textarea>
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="temas"
+              >Genero:</label
+            >
+            <select style="width: 100%;" name="" id="">
+                <option value="" selected>Seleccione su sexo</option>
+                <option value="Programación">Masculino</option>
+                <option value="Deportes">Femenino</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label style="display: block" for="temas"
+              >Temas de interés:</label
+            >
+            <input type="checkbox" id="vehicle1" name="depotes" value="deportes">
+            <label for="vehicle1">Deportes</label>
+            <input type="checkbox" id="vehicle2" name="Literatura" value="literatura">
+            <label for="vehicle1">Literatura</label>
+            <input type="checkbox" id="vehicle2" name="Gastronomía" value="gastronomia">
+            <label for="vehicle1">Gastronomía</label>
+            <input type="checkbox" id="vehicle2" name="Progrmación" value="programacion">
+            <label for="vehicle1">Progrmación</label>
+            <input type="checkbox" id="vehicle2" name="Ajedrez" value="ajedrez">
+            <label for="vehicle1">Ajedrez</label>
+            <input type="checkbox" id="vehicle2" name="Otros" value="otros">
+            <label for="vehicle1">Otros</label>
+          </div>
+
+
+          <div style="margin-bottom: 10px; text-align: center">
+            <button type="submit">Guardar cambios</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
