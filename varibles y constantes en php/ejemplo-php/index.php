@@ -7,19 +7,21 @@
 </head>
 <body>
 <?php
-$nombre = "Juan"; // Variable de tipo string (cadena de texto)
-$edad = 30; // Variable de tipo entero (integer)
-$altura = 1.75; // Variable de tipo float (número decimal)
-$esEstudiante = true; // Variable de tipo boolean (true o false)
-// Imprimiendo variables en pantalla utilizando echo
+echo "<h1>Nombre: Luis Basilio Baquiax Sic</h1>";
+
+$nombre = "Juan";
+$edad = 30;
+$altura = 1.75; 
+$esEstudiante = true; 
+
 echo "<h2>Variables en PHP</h2>";
-echo "Nombre: " . $nombre . "<br>"; // Concatenando cadenas con el operador "."
+echo "Nombre: " . $nombre . "<br>"; 
 echo "Edad: " . $edad . "<br>";
 echo "Altura: " . $altura . " metros<br>";
-echo "Es estudiante: " . ($esEstudiante ? 'Sí' : 'No') . "<br>"; // Operador ternario para mostrar sí o no
+echo "Es estudiante: " . ($esEstudiante ? 'Sí' : 'No') . "<br>";
 
 const NOMBRE_SITIO = 'Hola mundo con PHP';
-define("PI", 3.1416); // Constante de tipo float
+define("PI", 3.1416); 
 
 echo "<h2>Constantes en PHP</h2>";
 echo "Nombre del sitio: " . NOMBRE_SITIO . "<br>";
