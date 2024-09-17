@@ -8,12 +8,13 @@
 <body>
 <?php
 $horasPermitidas = 20;
-$horasPiloto = 15;
-
+$horasPiloto = 155;
+echo 'Horas permitidas de vuelo: '.$horasPermitidas;
 if($horasPiloto > $horasPermitidas){
-    echo 'Solo se permiten '.$horasPermitidas.' horas de vuelo.';
+    echo '<br>Solo se permiten '.$horasPermitidas.' horas de vuelo.';
 }else{
-    echo 'Se encuettra en el rango de horas permitidas, usted ha viajado '.$horasPiloto.' horas.';
+    echo '<br>Le quedan '.$horasPermitidas - $horasPiloto.' horas de vuelo.';
+    echo '<br>Se encuettra en el rango de horas permitidas, usted ha viajado '.$horasPiloto.' horas.';
 }
 
 ?>
