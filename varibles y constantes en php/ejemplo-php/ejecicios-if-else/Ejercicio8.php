@@ -7,8 +7,8 @@
 </head>
 <body>
 <?php
-$numero = 11;
-if($numero >=0 && $numero <= 0){
+$numero = 1;
+if($numero >=0 && $numero <= 9){
     echo "El numero ".$numero." es un digito";
 }else{
     echo "El numero ".$numero." no es un digito";
