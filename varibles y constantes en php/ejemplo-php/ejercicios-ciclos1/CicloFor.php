@@ -23,6 +23,15 @@ echo '<h2>Tablas de multiplicar del 3</h2>';
 for ($j = 1; $j < 11; $j++) {
     echo '3 x '. $j . ' = '.(3 * $j).'<br>';
 }
+/*
+echo '<h2>Tabla de multiplicar del 1 al 10</h2>';
+for ($j = 1; $j < 11; $j++) {
+    echo 'Tablas de multiplicar del ' . $j . '<br>';
+    for ($k = 1; $k < 11; $k++) {
+        echo $j.' x '. $k . ' = '.($j * $k).'<br>';
+    }
+}*/
+
 ?>
 </body>
 </html>
