@@ -9,7 +9,7 @@
     <?php
     define('MENSAJE_HOLA','Hola');
     define('MENSAJE_ADIOS','Adios');
-    $mensaje = MENSAJE_ADIOS;
+    $mensaje = MENSAJE_HOLA;
     $nombreUsuario = 'Luis';
     if($mensaje == MENSAJE_HOLA){
         echo "Muy buenos días ".$nombreUsuario;
