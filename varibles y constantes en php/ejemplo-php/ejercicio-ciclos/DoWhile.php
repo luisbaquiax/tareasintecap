@@ -39,14 +39,14 @@ do {
     echo $index . " ";
     $index += 2;
 } while ($index <= $final);
-echo '<h4>Suma de los primeros 100 números</h4>';
+echo '<h4>Suma de los primeros 100 números pares</h4>';
 $inicial = 0;
 $final = 100;
 $index = $inicial;
 $resultado = 0;
  do {
     $resultado += $index;
-    $index++;
+    $index+=2;
 } while ($index <= $final);
 echo "Suma de 1..100 : " . $resultado;
 echo '<h4>Imprimir la tabla de multiplicar del 5</h4>';
