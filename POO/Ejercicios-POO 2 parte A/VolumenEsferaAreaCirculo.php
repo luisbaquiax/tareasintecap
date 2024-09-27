@@ -2,7 +2,9 @@
 class VolumenEsferaAreaCirculo
 {
     private $radio;
-    public function __construct($radio){}
+    public function __construct($radio){
+        $this->radio = $radio;
+    }
     public function getArea(){
         return pi()*$this->radio**2;
     }
