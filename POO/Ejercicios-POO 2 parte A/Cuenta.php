@@ -43,4 +43,4 @@ echo "<br>Saldo despues del retiro de ".$cuenta->retiro." es de: Q." .$cuenta->s
 $retiro = 400;
 echo "<br>Nuevo retiro: ".$retiro;
 $cuenta->realizarRetiro($retiro);
-echo "<br>Saldo despues del retiro de ".$cuenta->retiro." es de: Q." .$cuenta->saldoActual;
+echo "<br>Saldo despues del retiro de ".$retiro." es de: Q." .$cuenta->saldoActual;
