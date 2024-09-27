@@ -39,4 +39,4 @@ class Rectangulo extends Figura {
 $rectangulo = new Rectangulo(5,5);
 echo "Area del rectángulo con lados ".$rectangulo->ancho." y ".$rectangulo->alto." es: ".$rectangulo->calcularArea()."<br>";
 $circulo = new Circulo(3);
-echo "Area del círculo con radio ".$circulo->radio." es: ".$rectangulo->calcularArea()."<br>";
+echo "Area del círculo con radio ".$circulo->radio." es: ".$circulo->calcularArea()."<br>";
