@@ -160,7 +160,7 @@ class ControlProductos
             $productoBuscado->setCantidad($producto->getCantidad());
             $productoBuscado->setDescripcion($producto->getDescripcion());
         } else {
-            echo "<legend style='color: red'><strong>El producto no existe</strong></legend>.<br>";
+            echo "<legend style='color: red'><strong>El producto ${nombre} no existe</strong></legend>.<br>";
         }
     }
 
