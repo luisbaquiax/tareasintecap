@@ -140,8 +140,9 @@ class ControlProductos
 
     public function addProduct(Producto $producto) {
         $aux = $producto->getNombre();
-        foreach ($this->productos as $producto) {
-            if ($producto->getNombre() == $producto->getNombre()) {
+        foreach ($this->productos as $p) {
+            if ($producto->getNombre() == $p->getNombre()) {
+                echo "<legend style='color: blue'><strong>El producto ${aux} ya existe, no se puede agregar producto que ya exista.</strong></legend>.<br>";
                 return;
             }
         }
