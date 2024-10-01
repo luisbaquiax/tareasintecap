@@ -139,7 +139,14 @@ class ControlProductos
     }
 
     public function addProduct(Producto $producto) {
+        $aux = $producto->getNombre();
+        foreach ($this->productos as $producto) {
+            if ($producto->getNombre() == $producto->getNombre()) {
+                return;
+            }
+        }
         $this->productos[] = $producto;
+        echo "<legend style='color: blue'><strong>El producto ${aux} fue agregado con éxito.</strong></legend>.<br>";
     }
 
     private function searchProduct($nombre)
@@ -159,6 +166,7 @@ class ControlProductos
             $productoBuscado->setPrecio($producto->getPrecio());
             $productoBuscado->setCantidad($producto->getCantidad());
             $productoBuscado->setDescripcion($producto->getDescripcion());
+            echo "<legend style='color: green'><strong>El producto ${nombre} fue actualizad con éxito</strong></legend>.<br>";
         } else {
             echo "<legend style='color: red'><strong>El producto ${nombre} no existe</strong></legend>.<br>";
         }
@@ -167,6 +175,7 @@ class ControlProductos
     public function deleteProduct($nombre) {
         foreach ($this->productos as $index => $producto) {
             if ($producto->getNombre() == $nombre) {
+                echo "<legend style='color: green'><strong>El producto ${nombre} fue eliminado con éxito</strong></legend>.<br>";
                 unset($this->productos[$index]);
                 return;
             }
