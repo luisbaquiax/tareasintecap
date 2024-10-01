@@ -171,7 +171,7 @@ class ControlProductos
                 return;
             }
         }
-        echo "El producto no existe.";
+        echo "<legend style='color: red'><strong>El producto ${nombre} no existe</strong></legend>.<br>";
     }
 
     public function showTableProductos() {
