@@ -197,10 +197,9 @@ class ControlProductos
             } elseif ($producto instanceof Alimento) {
                 $auxi = "Fecha de expiración: ".$producto->getFechaExpiracion().", Tipo: ".$producto->getTipoAlimento();
             }
-
             echo "<tr>
                     <td>".$producto->getNombre()."</td>
-                    <td>".$producto->getPrecio()."</td>
+                    <td>Q.".$producto->getPrecio()."</td>
                     <td>".$producto->getCantidad()."</td>
                     <td>".$producto->getDescripcion()."</td>
                     <td>${auxi}</td>
@@ -241,8 +240,8 @@ echo "LISTADO  PRODUCTOS";
 $controlProducto->showTableProductos();
 
 $descuentoPorcentaje = 20; // 20%
-echo "<br>Precio con descuento de la camisa: " . $camisa->calcularDescuento($descuentoPorcentaje) . "<br>";
-echo "Precio con descuento de la leche: " . $leche->calcularDescuento($descuentoPorcentaje) . "<br>";
+echo "<br>Precio con descuento de la camisa: Q." . $camisa->calcularDescuento($descuentoPorcentaje) . "<br>";
+echo "Precio con descuento de la leche: Q." . $leche->calcularDescuento($descuentoPorcentaje) . "<br>";
 ?>
 
 </body>
