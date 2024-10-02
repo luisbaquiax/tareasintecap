@@ -53,6 +53,11 @@ class Producto
     public function getDescripcion() { return $this->descripcion; }
     public function setDescripcion($descripcion) { $this->descripcion = $descripcion; }
 
+    public function getDetails()
+    {
+        return "Nombre: ".$this->nombre."<br>";
+    }
+
     public function calcularDescuento($porcentaje) {
         return $this->precio - ($this->precio * $porcentaje / 100);
     }
@@ -74,6 +79,10 @@ class Alimento extends Producto
     public function setFechaExpiracion($fechaExpiracion) { $this->fechaExpiracion = $fechaExpiracion; }
     public function getTipoAlimento() { return $this->tipoAlimento; }
     public function setTipoAlimento($tipoAlimento) { $this->tipoAlimento = $tipoAlimento; }
+    public function getDetails()
+    {
+        return "Fecha de expiración: ".$this->fechaExpiracion." Tipo de alimento: ".$this->tipoAlimento;
+    }
 }
 
 class Libro extends Producto
@@ -92,6 +101,10 @@ class Libro extends Producto
     public function setNombreAutor($nombreAutor) { $this->nombreAutor = $nombreAutor; }
     public function getEditorial() { return $this->editorial; }
     public function setEditorial($editorial) { $this->editorial = $editorial; }
+    public function getDetails()
+    {
+        return "Autor: ".$this->nombreAutor." Editorial: ".$this->editorial;
+    }
 }
 
 class Electronico extends Producto
@@ -110,6 +123,10 @@ class Electronico extends Producto
     public function setMarca($marca) { $this->marca = $marca; }
     public function getModelo() { return $this->modelo; }
     public function setModelo($modelo) { $this->modelo = $modelo; }
+    public function getDetails()
+    {
+        return "Modelo: ".$this->modelo." Marca: ".$this->marca;
+    }
 }
 
 class Ropa extends Producto
@@ -128,6 +145,11 @@ class Ropa extends Producto
     public function setTalla($talla) { $this->talla = $talla; }
     public function getColor() { return $this->color; }
     public function setColor($color) { $this->color = $color; }
+
+    public function getDetails()
+    {
+        return "Talla: ".$this->talla." Color: ".$this->color;
+    }
 }
 
 class ControlProductos
@@ -197,7 +219,7 @@ class ControlProductos
               </thead><tbody>";
 
         foreach ($this->productos as $producto) {
-            $auxi = "";
+            /*$auxi = "";
             if ($producto instanceof Electronico) {
                 $auxi = "Marca: ".$producto->getMarca().", Modelo: ".$producto->getModelo();
             } elseif ($producto instanceof Ropa) {
@@ -206,13 +228,13 @@ class ControlProductos
                 $auxi = "Autor: ".$producto->getNombreAutor().", Editorial: ".$producto->getEditorial();
             } elseif ($producto instanceof Alimento) {
                 $auxi = "Fecha de expiración: ".$producto->getFechaExpiracion().", Tipo: ".$producto->getTipoAlimento();
-            }
+            }*/
             echo "<tr>
                     <td>".$producto->getNombre()."</td>
                     <td>Q.".$producto->getPrecio()."</td>
                     <td>".$producto->getCantidad()."</td>
                     <td>".$producto->getDescripcion()."</td>
-                    <td>${auxi}</td>
+                    <td>".$producto->getDetails()."</td>
                   </tr>";
         }
 
