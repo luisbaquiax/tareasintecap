@@ -81,7 +81,7 @@ class Alimento extends Producto
     public function setTipoAlimento($tipoAlimento) { $this->tipoAlimento = $tipoAlimento; }
     public function getDetails()
     {
-        return "Fecha de expiración: ".$this->fechaExpiracion." Tipo de alimento: ".$this->tipoAlimento;
+        return "Fecha de expiración: ".$this->fechaExpiracion."<br>Tipo de alimento: ".$this->tipoAlimento;
     }
 }
 
@@ -103,7 +103,7 @@ class Libro extends Producto
     public function setEditorial($editorial) { $this->editorial = $editorial; }
     public function getDetails()
     {
-        return "Autor: ".$this->nombreAutor." Editorial: ".$this->editorial;
+        return "Autor: ".$this->nombreAutor."<br>Editorial: ".$this->editorial;
     }
 }
 
@@ -125,7 +125,7 @@ class Electronico extends Producto
     public function setModelo($modelo) { $this->modelo = $modelo; }
     public function getDetails()
     {
-        return "Modelo: ".$this->modelo." Marca: ".$this->marca;
+        return "Modelo: ".$this->modelo."<br>Marca: ".$this->marca;
     }
 }
 
@@ -148,7 +148,7 @@ class Ropa extends Producto
 
     public function getDetails()
     {
-        return "Talla: ".$this->talla." Color: ".$this->color;
+        return "Talla: ".$this->talla."<br>Color: ".$this->color;
     }
 }
 
