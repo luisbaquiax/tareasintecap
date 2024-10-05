@@ -47,7 +47,7 @@ class Juego
                     case self::PAPEL:
                         $this->jugador1->setGano(true);
                         $this->jugador2->setGano(false);
-                        return "Elegiste: $opcion1, Computadora: $opcion2<br> Haz ganado, perdió la computadora";
+                        return "Elegiste: $opcion1, Computadora: $opcion2<br> Haz perdido, ganó la computadora";
                 }
                 break;
             case self::PAPEL:
