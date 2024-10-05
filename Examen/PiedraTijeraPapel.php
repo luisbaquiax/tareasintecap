@@ -2,11 +2,6 @@
 require "Jugador.php";
 require "Juego.php";
 
-session_start();
-
-if (!isset($_SESSION['juegos'])) {
-    $_SESSION['juegos'] = array();
-}
 ?>
 <!doctype html>
 <html lang="en">
